@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cop.css">
+    
+    <link rel="" href="COP.html">
+    <link rel="" href="member.html">
+    <link rel="stylesheet" href="about.html">
+    <link rel="stylesheet" href="service.html">
+    <link rel="stylesheet" href="cop.css">
+    <link rel="stylesheet" href="contact.html">
+    <link rel="stylesheet" href="view-registered.html">
+    <title>Event Registration - Church of Pentecost</title>
+  
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <section class="event-register-header">
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="COP.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="view-registered.html">View Registrants</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Register for an Event</h1>
+        <p>Fill in the form below to register for our upcoming programs</p>
+    </section>
+
+    <!-- Event Registration Form -->
+    <section class="event-form-section">
+        <div class="event-form-container">
+            <h2>Event Registration Form</h2>
+            <form id="eventRegistrationForm">
+                
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="example@domain.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="+233 000 000 000" required>
+
+                <label for="selectedEvent">Select Event:</label>
+                <select id="selectedEvent" required>
+                    <option value="">-- Choose an Event --</option>
+                    <option value="Prayer Conference 2025">Prayer Conference 2025</option>
+                    <option value="Youth Camp Meeting 2025">Youth Camp Meeting 2025</option>
+                    <option value="Christmas Carol Service">Christmas Carol Service</option>
+                </select>
+
+                <label for="attendees">Number of Attendees:</label>
+                <input type="number" id="attendees" min="1" value="1" required>
+
+                <button type="submit" class="register-btn">Submit Registration</button>
+            </form>
+
+            <div id="confirmationMessage" class="confirmation-message"></div>
+        </div>
+    </section>
+
+    <script src="event-register.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cop.css">
+    <link rel="" href="COP.html">
+    <link rel="stylesheet" href="member.html">
+    <link rel="stylesheet" href="about.html">
+    <link rel="stylesheet" href="service.html">
+    <link rel="stylesheet" href="events.html">
+    <title>Member Registration Form</title>
+</head>
+
+<body>
+
+    <section class="register"> 
+        <nav>
+        <a href="register.html"></a> 
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="COP.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="member.html">Membership</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="">Articles</a></li>
+                <li><a href="">Images</a></li>
+                <li><a href="">Videos</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">||  Contact Us:</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+      
+    
+    
+    <div class="container">
+        <h2>Member Registration Form</h2>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br>
+            
+            <label for="residence">Residence:</label>
+            <select id="residence" required>
+                <option value="">Select Residence</option>
+                <option value="New York">New York</option>
+                <option value="Atadeka">Atadeka</option>
+                <option value="40 Room">40 Room</option>
+                <option value="Jerusalem No_ 2">Jerusalem No_ 2</option>
+                <option value="Kuberkrom">Kuberkrom No_ 1</option>
+                <option value="Peaceland">Peaceland</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Aviation">Aviation</option>
+            </select>
+            
+            
+            
+            <label for="status">Status:</label>
+            <select id="status" required>
+                <option value="">Select Status</option>
+                <option value="Married">Married</option>
+                <option value="Single">Single</option>
+                
+            </select>
+
+            <label for="contact">Contact:</label>
+            <input value="+233 " type="tel" id="contact" required><br>
+
+            <label for="position">Position:</label>
+            <select id="Position" required>
+            <option value="">Select Position</option>
+            <option value="Member">Member</option>
+            <option value="Deacon">Deacon</option>
+            <option value="Deaconness">Deaconness</option>
+            <option value="Elder">Elder</option>
+            <option value="PreElder">Presiding Elder</option>
+        </select>
+        <button type="button" onclick="addMember()">Register Member</button>
+      
+
+    </form>
+</select>
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
