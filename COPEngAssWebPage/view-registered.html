@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registrants - Church of Pentecost</title>
+    <link rel="stylesheet" href="cop.css">
+    <link rel="stylesheet" href="event-reg.html">
+</head>
+<body>
+
+    <!-- Header -->
+    <section class="registrants-header">
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="COP.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="event-reg.html">Register</a></li>
+              
+                </ul>
+            </div>
+        </nav>
+        <h1>Event Registrants</h1>
+        <p class="event-reg">List of all participants who have registered for upcoming events</p>
+    </section>
+
+    <!-- Registrants Table -->
+    <section class="registrants-table-section">
+        <div class="table-container">
+            <table id="registrantsTable">
+                <thead>
+                    <tr>
+                        <th>Receipt No</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Event</th>
+                        <th>Attendees</th>
+                        <th>Date Registered</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Registrant rows will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        // Load registrants from localStorage
+        const tableBody = document.querySelector('#registrantsTable tbody');
+        const registrations = JSON.parse(localStorage.getItem('eventRegistrations')) || [];
+
+        if (registrations.length === 0) {
+            tableBody.innerHTML = `<tr><td colspan="7" style="text-align:center;">No registrations found.</td></tr>`;
+        } else {
+            registrations.forEach(reg => {
+                const row = `
+                    <tr>
+                        <td>${reg.receiptNo}</td>
+                        <td>${reg.fullName}</td>
+                        <td>${reg.email}</td>
+                        <td>${reg.phone}</td>
+                        <td>${reg.selectedEvent}</td>
+                        <td>${reg.attendees}</td>
+                        <td>${reg.date}</td>
+                    </tr>
+                `;
+                tableBody.innerHTML += row;
+            });
+        }
+            
+    </script>
+
+</body>
+</html>

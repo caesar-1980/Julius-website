@@ -1,0 +1,210 @@
+/* Gallery Header */
+
+.body {
+background-color: #edb91c;
+}
+.gallery-header {
+    min-height: 10px;
+    
+  text-align: center;
+ background-color: #0a4169;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.gallery-header1 h1 {
+    min-height: 1vh;
+    width: 100%;
+   background-color:yellow;
+    padding: 2% 0%;
+  color: brown;
+  text-align: center;
+}
+
+.gallery-header1 p {
+    min-height: 3vh;
+    background-color: grey;
+    color: rgb(246, 241, 241);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.gallery-header p {
+    color: #f9f9f9;
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none;                /* Hidden by default */
+  position: fixed;
+  z-index: 1000;                /* Above everything */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.caption-text {
+  color: #fff;
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: #ff4d4d;
+}
+
+
+.gallery-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.gallery-header p {
+  font-size: 1.2rem;
+}
+
+/* Gallery Container */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+/* Gallery Items */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Caption */
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* --- Carousel Styles --- */
+.carousel-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+  min-width: 300px;
+  margin: 0 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.carousel-track img:hover {
+  transform: scale(1.05);
+}
+
+/* Arrow Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.left-btn { left: 10px; }
+.right-btn { right: 10px; }
+
+.carousel-btn:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* --- Lightbox Styles (from earlier) --- */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+}
+
+.caption-text {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.close {
+  position: absolute;
+  top: 20px; right: 40px;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}

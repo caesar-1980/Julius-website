@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Church of Pentecost</title>
+  <link rel="stylesheet" href="cop.css">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+<section class="gallery-header">
+          <nav>
+        <a href="index.html"></a> 
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="COP.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="member.html">Membership</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="">Articles</a></li>
+                <li><a href="image.html">Images</a></li>
+                <li><a href="">Videos</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">||  Contact Us:</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+</section>
+
+  <!-- Page Header -->
+  <header class="gallery-header1">
+    <h1>Our Gallery</h1>
+    <p>Explore memorable moments from our programs and activities.</p>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="gallery-container">
+    <div class="gallery-item">
+      <img src="images/img1.jpg" alt="Prayer Conference">
+      <div class="caption">Prayer Conference 2025</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/img2.jpg" alt="Youth Camp">
+      <div class="caption">All Ministers' District Crusade</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/img3.jpg" alt="Carol Service">
+      <div class="caption">Christmas Carol Service</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/img4.jpg" alt="Choir Performance">
+      <div class="caption">Choir Performance</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/img5.jpg" alt="Community Outreach">
+      <div class="caption">Deacon Alex's Birthday. Very inspirational and hardworking brother in the ministry</div>
+     
+    </div>
+
+     <div class="gallery-item">
+      <img src="images/img6.jpg" alt="Community Outreach">
+      <div class="caption">Miss Millicent Odartey's Birthday. “She’s a vibrant young woman with a bright spirit, a kind heart, and a curious mind—graceful in the way she carries herself and genuine in the way she connects with people.”</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Church of Pentecost | All Rights Reserved</p>
+  </footer>
+
+  <!-- Lightbox for Enlarged Image -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    <div class="caption-text" id="caption-text"></div>
+  </div>
+
+  <script src="gallery.js"></script>
+
+</body>
+</html>
